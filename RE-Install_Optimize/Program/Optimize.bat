@@ -104,7 +104,7 @@ IF /I !CrackActivation!==CrackActivation (
         echo 檢測到未安裝Office請先安裝
         pause
     )
-    call "!ProgramFiles!\WinRAR\WinRAR.exe" x -p123 %~dp0\MAS2.5.rar C:\Users\!Username!\Desktop
+    call "!ProgramFiles!\WinRAR\WinRAR.exe" x -p123 %~dp0\MAS2.6.rar C:\Users\!Username!\Desktop
     IF /I !WindowsLicense!==Windows已啟用 (
         start /d "C:\Users\!Username!\Desktop\MAS\All-In-One-Version" MAS_AIO.cmd /KMS-Office
     ) else ( 
