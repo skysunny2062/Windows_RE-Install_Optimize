@@ -48,6 +48,7 @@ exit
 ::====================================UI優化=========================================
 :Install
 
+DISM /Online /Add-Capability /CapabilityName:WMIC
 wmic.exe /namespace:\\root\default Path SystemRestore Call Disable C:\
 REG add "HKLM\SOFTWARE\Policies\Microsoft\Windows NT\SystemRestore" /v DisableSR /t REG_DWORD /d 1 /f
 REG add HKLM\SOFTWARE\Microsoft\Windows\CurrentVersion\Reliability /v TimeStampInterval /f /t REG_DWORD /d 0
@@ -73,6 +74,7 @@ sc config TrkWks start= disabled
 sc config WdiServiceHost start= disabled
 sc config WdiSystemHost start= disabled
 sc config DPS start= disabled
+!windir!\System32\OneDriveSetup.exe /uninstall
 echo.
 echo.
 echo UI優化完成
