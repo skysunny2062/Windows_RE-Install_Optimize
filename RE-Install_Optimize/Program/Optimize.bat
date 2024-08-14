@@ -225,7 +225,7 @@ for /f "delims=" %%F in ('dir /ad /b "%~dp0..\Zack\ProgramFiles"') do (
 )
 xcopy /s /y %~dp0..\Zack\Desktop C:\Users\!Username!\Desktop
 xcopy /s /y %~dp0..\Zack\AppData !AppData!
-xcopy /s /y "!ProgramFiles!\mpv.net-DW\portable_config\Backup" "!ProgramFiles!\mpv.net-DW\portable_config"
+xcopy /s /y "!ProgramFiles!\mpv.net-DW\portable_config\Backup\mpv.conf" "!ProgramFiles!\mpv.net-DW\portable_config\"
 regedit /s %~dp0..\Zack\ZackPotPlayerMini64.reg
 start /d "!ProgramFiles!\Locale Emulator" LEInstaller.exe
 goto :eof
