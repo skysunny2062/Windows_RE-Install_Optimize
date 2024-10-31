@@ -108,9 +108,9 @@ IF /I !CrackActivation!==CrackActivation (
     )
     call "!ProgramFiles!\WinRAR\WinRAR.exe" x -p123 %~dp0\MAS2.7.rar C:\Users\!Username!\Desktop
     IF /I !WindowsLicense!==Windows¤w±Ò¥Î (
-        start /d "C:\Users\!Username!\Desktop\MAS\All-In-One-Version" MAS_AIO.cmd /KMS-Office
+        start /d "C:\Users\!Username!\Desktop\MAS\All-In-One-Version-KL" MAS_AIO.cmd /Ohook
     ) else ( 
-        start /d "C:\Users\!Username!\Desktop\MAS\All-In-One-Version" MAS_AIO.cmd /HWID /KMS-Office
+        start /d "C:\Users\!Username!\Desktop\MAS\All-In-One-Version-KL" MAS_AIO.cmd /HWID /Ohook
     )
     timeout /t 30 /nobreak
 )
