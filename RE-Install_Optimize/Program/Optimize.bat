@@ -227,6 +227,7 @@ xcopy /s /y %~dp0..\Zack\Desktop C:\Users\!Username!\Desktop
 xcopy /s /y %~dp0..\Zack\AppData !AppData!
 xcopy /s /y "!ProgramFiles!\mpv.net-DW\portable_config\Backup\mpv.conf" "!ProgramFiles!\mpv.net-DW\portable_config\"
 regedit /s %~dp0..\Zack\ZackPotPlayerMini64.reg
+xcopy /s /y %~dp0..\Zack\pkey.txt "!ProgramFiles(x86)!\FinalWire\AIDA64 Extreme"
 start /d "!ProgramFiles!\Locale Emulator" LEInstaller.exe
 goto :eof
 
