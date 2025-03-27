@@ -16,7 +16,7 @@ Lt_Hd = False
 Model = 5005
 Gpu = 0
 Gpu_T = 2
-H_Max = 1440
+H_Max = 2560
 Lk_Fmt = False
 ## 整数，预降低处理源高度
 ## <True|False> 是否对超过HD分辨率（720P）的源进行处理
