@@ -11,7 +11,7 @@ clip = video_in
 # 用户选项 #
 ############
 
-H_Pre = 2560
+H_Pre = 2160
 Model = 21
 T_Tta = False
 Fps_Num = 2

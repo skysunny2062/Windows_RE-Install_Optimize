@@ -225,7 +225,6 @@ for /f "delims=" %%F in ('dir /ad /b "%~dp0..\Zack\ProgramFiles"') do (
 )
 xcopy /s /y %~dp0..\Zack\Desktop C:\Users\!Username!\Desktop
 xcopy /s /y %~dp0..\Zack\AppData !AppData!
-xcopy /s /y "!ProgramFiles!\mpv.net-DW\portable_config\Backup\mpv.conf" "!ProgramFiles!\mpv.net-DW\portable_config\"
 regedit /s %~dp0..\Zack\ZackPotPlayerMini64.reg
 xcopy /s /y %~dp0..\Zack\pkey.txt "!ProgramFiles(x86)!\FinalWire\AIDA64 Extreme"
 start /d "!ProgramFiles!\Locale Emulator" LEInstaller.exe
@@ -266,7 +265,6 @@ rd /s /q "!ProgramFiles!\mpv.net-DW\portable_config\watch_later"
 xcopy /y "!ProgramFiles!\mpv.net-DW\portable_config\mpv.conf" "!ProgramFiles!\mpv.net-DW\portable_config\Backup\"
 robocopy "!ProgramFiles!\mpv.net-DW" "%~dp0ProgramFiles\mpv.net-DW" /mir /mt:128 /r:10 /w:3
 del /f /q /s settings.xml
-xcopy /s /y "%~dp0ProgramFiles\mpv.net-DW\portable_config\Original" "%~dp0ProgramFiles\mpv.net-DW\portable_config"
 goto :eof
 
 ::==================================ZackDATABackup=====================================
