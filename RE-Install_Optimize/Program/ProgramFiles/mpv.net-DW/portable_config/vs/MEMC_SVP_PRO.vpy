@@ -6,7 +6,7 @@ import k7sfunc as k7f
 clip=video_in
 
 H_Pre=2160 #4K處理
-Fps_Num=144 #目標fps
+Fps_Num=60 #目標fps
 Fps_Den=1
 Abs=True #絕對幀率
 Nvof=False #禁用光流（RX9070XT不支持）
