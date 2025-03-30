@@ -49,8 +49,6 @@ exit
 :Install
 
 DISM /Online /Add-Capability /CapabilityName:WMIC
-wmic.exe /namespace:\\root\default Path SystemRestore Call Disable C:\
-REG add "HKLM\SOFTWARE\Policies\Microsoft\Windows NT\SystemRestore" /v DisableSR /t REG_DWORD /d 1 /f
 REG add HKLM\SOFTWARE\Microsoft\Windows\CurrentVersion\Reliability /v TimeStampInterval /f /t REG_DWORD /d 0
 REG add "HKLM\SYSTEM\CurrentControlSet\Control\Session Manager\Memory Management" /v PagingFiles /t REG_MULTI_SZ /d "" /f
 REG add "HKLM\SYSTEM\ControlSet001\Control\Session Manager\Memory Management" /v DisablePagingExecutive /f /t REG_DWORD /d 1
@@ -60,7 +58,8 @@ schtasks /delete /tn "Microsoft\Windows\Windows Defender\Windows Defender Cache 
 schtasks /delete /tn "Microsoft\Windows\Windows Defender\Windows Defender Cleanup" /f
 schtasks /delete /tn "Microsoft\Windows\Windows Defender\Windows Defender Scheduled Scan" /f
 schtasks /delete /tn "Microsoft\Windows\Windows Defender\Windows Defender Verification" /f
-schtasks /change /tn Microsoft\Windows\Defrag\ScheduledDefrag /disable
+schtasks /change /tn "\Microsoft\Windows\Defrag\ScheduledDefrag" /disable
+wmic.exe /namespace:\\root\default Path SystemRestore Call Disable C:\
 bcdedit /set {bootmgr} timeout 0
 SC config SysMain start= disabled
 SC config DusmSvc start= disabled
