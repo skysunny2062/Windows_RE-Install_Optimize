@@ -1,8 +1,10 @@
-# Windows_RE-Install_Optimize- Windows 11 24H2 優化與安裝工具  
-# Windows_RE-Install_Optimize - Windows 11 24H2 Optimization and Installation Tool
+# Windows_RE-Install_Optimize 
+# Windows 11 24H2 優化與安裝工具  
+# Windows 11 24H2 Optimization and Installation Tool
 
 ## 簡介 / Introduction  
-`Windows_RE-Install_Optimize` 是一個基於 Python 和 Batch 腳本開發的工具，旨在為新安裝的 Windows 11 24H2 系統進行 UI/UX 優化，並自動安裝常用軟體。特別針對台灣使用者本地化設計，適合個人使用或協助他人重灌系統。  
+`Windows_RE-Install_Optimize` 是一個基於 Python 和 Batch 腳本開發的工具，旨在為新安裝的 Windows 11 24H2 系統進行 UI/UX 優化，並自動安裝常用軟體。特別針對台灣使用者本地化設計，適合個人使用或協助他人重灌系統。
+  
 `Windows_RE-Install_Optimize` is a tool developed with Python and Batch scripts to optimize UI/UX for a freshly installed Windows 11 24H2 system and automate the installation of essential software. Tailored for Taiwanese users, it’s ideal for personal use or helping others with system reinstallation.
 
 ## 功能 / Features  
