@@ -1,9 +1,9 @@
-# Optimize.exe - Windows 11 24H2 優化與安裝工具  
-# Optimize.exe - Windows 11 24H2 Optimization and Installation Tool
+# Windows_RE-Install_Optimize- Windows 11 24H2 優化與安裝工具  
+# Windows_RE-Install_Optimize - Windows 11 24H2 Optimization and Installation Tool
 
 ## 簡介 / Introduction  
-`Optimize.exe` 是一個基於 Python 和 Batch 腳本開發的工具，旨在為新安裝的 Windows 11 24H2 系統進行 UI/UX 優化，並自動安裝常用軟體。特別針對台灣使用者本地化設計，適合個人使用或協助他人重灌系統。  
-`Optimize.exe` is a tool developed with Python and Batch scripts to optimize UI/UX for a freshly installed Windows 11 24H2 system and automate the installation of essential software. Tailored for Taiwanese users, it’s ideal for personal use or helping others with system reinstallation.
+`Windows_RE-Install_Optimize` 是一個基於 Python 和 Batch 腳本開發的工具，旨在為新安裝的 Windows 11 24H2 系統進行 UI/UX 優化，並自動安裝常用軟體。特別針對台灣使用者本地化設計，適合個人使用或協助他人重灌系統。  
+`Windows_RE-Install_Optimize` is a tool developed with Python and Batch scripts to optimize UI/UX for a freshly installed Windows 11 24H2 system and automate the installation of essential software. Tailored for Taiwanese users, it’s ideal for personal use or helping others with system reinstallation.
 
 ## 功能 / Features  
 1. **UI/UX 優化 / UI/UX Optimization**  
@@ -25,8 +25,8 @@
 - Windows 11 24H2, administrator privileges, at least 2GB free space.
 
 ### 下載與準備 / Download and Setup  
-- 前往 GitHub 專案頁面：[連結待補充](#)，點擊「Code」按鈕，選擇「Download ZIP」以下載程式碼壓縮檔。解壓後將必要安裝檔案放入指定資料夾。  
-- Visit the GitHub project page: [Link TBD](#), click the “Code” button, and select “Download ZIP” to download the code archive. Extract it and place necessary installation files into the designated folders.
+- GitHub 專案頁面：點擊「Code」按鈕，選擇「Download ZIP」以下載程式碼壓縮檔。解壓後將必要安裝檔案放入指定資料夾。  
+- GitHub project page:click the “Code” button, and select “Download ZIP” to download the code archive. Extract it and place necessary installation files into the designated folders.
 
 ### 使用方法 / How to Use  
 1. 雙擊 `Optimize.exe` 啟動。  
