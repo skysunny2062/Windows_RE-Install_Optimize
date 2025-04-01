@@ -50,7 +50,6 @@ exit
 
 DISM /Online /Add-Capability /CapabilityName:WMIC
 REG add HKLM\SOFTWARE\Microsoft\Windows\CurrentVersion\Reliability /v TimeStampInterval /f /t REG_DWORD /d 0
-REG add "HKLM\SYSTEM\CurrentControlSet\Control\Session Manager\Memory Management" /v PagingFiles /t REG_MULTI_SZ /d "" /f
 REG add "HKLM\SYSTEM\ControlSet001\Control\Session Manager\Memory Management" /v DisablePagingExecutive /f /t REG_DWORD /d 1
 schtasks /delete /tn "\Microsoft\Windows\Customer Experience Improvement Program\Consolidator" /f
 schtasks /delete /tn "\Microsoft\Windows\Customer Experience Improvement Program\UsbCeip" /f
