@@ -21,6 +21,38 @@
    - 提供標準及個人化模式，可自訂電腦名稱。  
    - Offers standard and personalized modes with custom computer name setup.
 
+## 系統優化詳情 / System Optimization Details  
+以下是 `Windows_RE-Install_Optimize` 對系統進行的具體優化：  
+Below are the specific optimizations performed by `Windows_RE-Install_Optimize` on the system:  
+- **服務與任務管理 / Service and Task Management**  
+  - 停用 Windows Defender 排程任務（掃描、清理等）。  
+  - Disables Windows Defender scheduled tasks (scanning, cleanup, etc.).  
+  - 停用客戶體驗改進計劃（CEIP）任務。  
+  - Disables Customer Experience Improvement Program (CEIP) tasks.  
+  - 停用磁碟重組排程與系統還原功能。  
+  - Disables disk defragmentation scheduling and System Restore.  
+  - 停用 SysMain（超級預載）、列印服務（Spooler）、加密服務（CryptSvc）等非必要服務。  
+  - Disables SysMain (Superfetch), Print Spooler, Cryptographic Services, and other non-essential services.  
+- **啟動與電源設定 / Boot and Power Settings**  
+  - 將開機選單延遲設為 0 秒，提升啟動速度。  
+  - Sets boot menu timeout to 0 seconds for faster startup.  
+  - 調整電源設定：螢幕 15 分鐘關閉，硬碟與待機不休眠。  
+  - Adjusts power settings: monitor off after 15 minutes, no disk or standby timeout.  
+  - 停用休眠選項並啟用睡眠選項於電源選單。  
+  - Disables hibernate and enables sleep option in the power menu.  
+- **桌面與介面優化 / Desktop and Interface Optimization**  
+  - 移除任務欄搜尋框與任務檢視按鈕，顯示秒數於時鐘。  
+  - Removes taskbar search box and Task View button, shows seconds in the clock.  
+  - 設定任務欄圖示永不合併，關閉防火牆提升效能。  
+  - Sets taskbar icons to never combine, disables firewall for performance.  
+  - 自訂檔案總管圖示並清除圖示快取。  
+  - Customizes File Explorer icons and clears icon cache.  
+- **其他調整 / Miscellaneous Tweaks**  
+  - 停用 Office 應用程式（Excel、Word、PowerPoint）的保護檢視限制。  
+  - Disables Protected View restrictions in Office apps (Excel, Word, PowerPoint).  
+  - 停用 OneDrive 並解除安裝預設版本。  
+  - Disables and uninstalls the default OneDrive version.
+
 ## 安裝與使用 / Installation and Usage  
 ### 環境需求 / Requirements  
 - Windows 11 24H2，管理員權限，至少 2GB 可用空間。  
@@ -28,7 +60,7 @@
 
 ### 下載與準備 / Download and Setup  
 - GitHub 專案頁面：點擊「Code」按鈕，選擇「Download ZIP」以下載程式碼壓縮檔。解壓後將必要安裝檔案放入指定資料夾。  
-- GitHub project page:click the “Code” button, and select “Download ZIP” to download the code archive. Extract it and place necessary installation files into the designated folders.
+- GitHub project page: click the “Code” button, and select “Download ZIP” to download the code archive. Extract it and place necessary installation files into the designated folders.
 
 ### 使用方法 / How to Use  
 1. 雙擊 `Optimize.exe` 啟動。  
