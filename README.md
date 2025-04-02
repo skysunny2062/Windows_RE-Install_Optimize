@@ -14,17 +14,6 @@
 2. **軟體安裝 / Software Installation**  
    - 安裝常用軟體（Visual C++、Chrome 等），支援破解激活及個人化模式。  
    - Installs common software (Visual C++, Chrome, etc.), supports activation and personalized modes.  
-   - **選項說明 / Option Details**（適用於 `RE-Install_Optimize`，建議全選 N 使用）：  
-     - `Zack_Install_Mode`：一般選 N，Y 表示我自己個人使用模式，N 表示正常安裝模式（適用一般用戶）。  
-       - `Zack_Install_Mode`: Normally select N, Y for my personal use mode, N for standard install mode (for general users).  
-     - `CrackActivation`：一般選 N，Y 表示啟用破解激活（如 WinRAR、Office），N 表示不破解（合法使用）。  
-       - `CrackActivation`: Normally select N, Y for enabling activation (e.g., WinRAR, Office), N for no activation (legal use).  
-     - `Addtrans`：一般選 N，Y 表示新增 trans 使用者帳戶（含管理員權限），N 表示不新增。  
-       - `Addtrans`: Normally select N, Y to add a "trans" user account (with admin privileges), N to skip.  
-     - `DATARestore`：一般選 N，Y 表示還原使用者資料（從 D:\Backup），N 表示不還原。  
-       - `DATARestore`: Normally select N, Y to restore user data (from D:\Backup), N to skip.  
-     - `AnyDeskRestore`：一般選 N，Y 表示還原 AnyDesk 設定（從 D:\Backup），N 表示不還原。  
-       - `AnyDeskRestore`: Normally select N, Y to restore AnyDesk settings (from D:\Backup), N to skip.  
 3. **資料備份與還原 / Data Backup and Restore**  
    - 備份桌面、文件等至 D:\Backup，支援 AnyDesk 設定管理。  
    - Backs up Desktop, Documents, etc., to D:\Backup, with AnyDesk configuration support.  
@@ -82,10 +71,21 @@ Below are the specific optimizations performed by `Windows_RE-Install_Optimize` 
 2. 選擇功能（輸入 1-6）：  
    Select an option (enter 1-6):  
    - `1. RE-Install_Optimize`：優化與安裝 / Optimize and install  
+     - **選項說明 / Option Details**（建議全選 N 使用）：  
+       - `Zack_Install_Mode`：一般選 N，Y 表示我自己個人使用模式，N 表示正常安裝模式（適用一般用戶）。  
+         - `Zack_Install_Mode`: Normally select N, Y for my personal use mode, N for standard install mode (for general users).  
+       - `CrackActivation`：一般選 N，Y 表示啟用破解激活（如 Windows、Office），N 表示不破解（合法使用）。  
+         - `CrackActivation`: Normally select N, Y for enabling activation (e.g., Windows, Office), N for no activation (legal use).  
+       - `Addtrans`：一般選 N，Y 表示新增 trans 使用者帳戶（含管理員權限），N 表示不新增。  
+         - `Addtrans`: Normally select N, Y to add a "trans" user account (with admin privileges), N to skip.  
+       - `DATARestore`：一般選 N，Y 表示還原使用者資料（從 D:\Backup），N 表示不還原。  
+         - `DATARestore`: Normally select N, Y to restore user data (from D:\Backup), N to skip.  
+       - `AnyDeskRestore`：一般選 N，Y 表示還原 AnyDesk 設定（從 D:\Backup），N 表示不還原。  
+         - `AnyDeskRestore`: Normally select N, Y to restore AnyDesk settings (from D:\Backup), N to skip.  
    - `2. mpv.net-DW_Update`：更新 mpv.net / Update mpv.net  
    - `3. mpv.net-DW_Backup`：備份 mpv.net / Backup mpv.net  
    - `4. DATABackup`：備份資料 / Backup data  
-   - `5. Zack_DATABackup`：個人化備份 / Personalized backup  
+   - `5. Zack_DATABackup`：我自己個人使用模式 / for my personal use mode
    - `6. Exit`：退出 / Exit  
 3. 按提示輸入選項或電腦名稱，確認後執行。  
    Follow prompts to input options or computer name, then confirm to execute.
