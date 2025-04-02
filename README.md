@@ -14,12 +14,26 @@
 2. **軟體安裝 / Software Installation**  
    - 安裝常用軟體（Visual C++、Chrome 等），支援破解激活及個人化模式。  
    - Installs common software (Visual C++, Chrome, etc.), supports activation and personalized modes.  
+   - **選項說明 / Option Details**（適用於 `RE-Install_Optimize`，建議全選 N 使用）：  
+     - `Zack_Install_Mode`：一般選 N，Y 表示我自己個人使用模式，N 表示正常安裝模式（適用一般用戶）。  
+       - `Zack_Install_Mode`: Normally select N, Y for my personal use mode, N for standard install mode (for general users).  
+     - `CrackActivation`：一般選 N，Y 表示啟用破解激活（如 WinRAR、Office），N 表示不破解（合法使用）。  
+       - `CrackActivation`: Normally select N, Y for enabling activation (e.g., WinRAR, Office), N for no activation (legal use).  
+     - `Addtrans`：一般選 N，Y 表示新增 trans 使用者帳戶（含管理員權限），N 表示不新增。  
+       - `Addtrans`: Normally select N, Y to add a "trans" user account (with admin privileges), N to skip.  
+     - `DATARestore`：一般選 N，Y 表示還原使用者資料（從 D:\Backup），N 表示不還原。  
+       - `DATARestore`: Normally select N, Y to restore user data (from D:\Backup), N to skip.  
+     - `AnyDeskRestore`：一般選 N，Y 表示還原 AnyDesk 設定（從 D:\Backup），N 表示不還原。  
+       - `AnyDeskRestore`: Normally select N, Y to restore AnyDesk settings (from D:\Backup), N to skip.  
 3. **資料備份與還原 / Data Backup and Restore**  
    - 備份桌面、文件等至 D:\Backup，支援 AnyDesk 設定管理。  
    - Backs up Desktop, Documents, etc., to D:\Backup, with AnyDesk configuration support.  
 4. **系統重灌與設定 / System Reinstallation and Setup**  
    - 提供標準及個人化模式，可自訂電腦名稱。  
-   - Offers standard and personalized modes with custom computer name setup.
+   - Offers standard and personalized modes with custom computer name setup.  
+5. **個人化備份 / Personalized Backup**  
+   - `Zack_DATABackup`：針對我個人使用設計的備份模式。  
+     - `Zack_DATABackup`: Backup mode designed for my personal use.
 
 ## 系統優化詳情 / System Optimization Details  
 以下是 `Windows_RE-Install_Optimize` 對系統進行的具體優化：  
