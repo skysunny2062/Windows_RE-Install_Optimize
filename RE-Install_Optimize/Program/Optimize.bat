@@ -104,17 +104,10 @@ IF /I !CrackActivation!==CrackActivation (
         echo 檢測到未安裝Office請先安裝
         pause
     )
-    @REM call "!ProgramFiles!\WinRAR\WinRAR.exe" x -p123 %~dp0\MAS3.0.rar C:\Users\!Username!\Desktop
-    @REM IF /I !WindowsLicense!==Windows已啟用 (
-    @REM     start /d "C:\Users\!Username!\Desktop\MAS\All-In-One-Version-KL" MAS_AIO.cmd /Ohook
-    @REM ) else ( 
-    @REM     start /d "C:\Users\!Username!\Desktop\MAS\All-In-One-Version-KL" MAS_AIO.cmd /HWID /Ohook
-    @REM )
-    @REM timeout /t 30 /nobreak
     IF /I !WindowsLicense!==Windows已啟用 (
-        powershell -Command "& ([ScriptBlock]::Create((irm https://get.activated.win))) /Ohook /S"
+        powershell -Command "& ([ScriptBlock]::Create((irm https://get.activated.win))) /Ohook"
     ) else ( 
-        powershell -Command "& ([ScriptBlock]::Create((irm https://get.activated.win))) /HWID /Ohook /S"
+        powershell -Command "& ([ScriptBlock]::Create((irm https://get.activated.win))) /HWID /Ohook"
     )
     
 )
@@ -230,7 +223,6 @@ for /f "delims=" %%F in ('dir /ad /b "%~dp0..\Zack\ProgramFiles"') do (
 xcopy /s /y %~dp0..\Zack\Desktop C:\Users\!Username!\Desktop
 xcopy /s /y %~dp0..\Zack\AppData !AppData!
 regedit /s %~dp0..\Zack\ZackPotPlayerMini64.reg
-xcopy /s /y %~dp0..\Zack\pkey.txt "!ProgramFiles(x86)!\FinalWire\AIDA64 Extreme"
 start /d "!ProgramFiles!\Locale Emulator" LEInstaller.exe
 goto :eof
 
@@ -317,7 +309,6 @@ taskkill /f /im explorer.exe
 timeout /t 2 /nobreak
 start explorer.exe
 pause
-@REM rd /s /q C:\Users\!Username!\Desktop\MAS
 goto :eof
 
 ::====================================================================================
