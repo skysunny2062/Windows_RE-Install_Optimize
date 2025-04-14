@@ -104,13 +104,19 @@ IF /I !CrackActivation!==CrackActivation (
         echo 檢測到未安裝Office請先安裝
         pause
     )
-    call "!ProgramFiles!\WinRAR\WinRAR.exe" x -p123 %~dp0\MAS3.0.rar C:\Users\!Username!\Desktop
+    @REM call "!ProgramFiles!\WinRAR\WinRAR.exe" x -p123 %~dp0\MAS3.0.rar C:\Users\!Username!\Desktop
+    @REM IF /I !WindowsLicense!==Windows已啟用 (
+    @REM     start /d "C:\Users\!Username!\Desktop\MAS\All-In-One-Version-KL" MAS_AIO.cmd /Ohook
+    @REM ) else ( 
+    @REM     start /d "C:\Users\!Username!\Desktop\MAS\All-In-One-Version-KL" MAS_AIO.cmd /HWID /Ohook
+    @REM )
+    @REM timeout /t 30 /nobreak
     IF /I !WindowsLicense!==Windows已啟用 (
-        start /d "C:\Users\!Username!\Desktop\MAS\All-In-One-Version-KL" MAS_AIO.cmd /Ohook
+        powershell -Command "& ([ScriptBlock]::Create((irm https://get.activated.win))) /Ohook /S"
     ) else ( 
-        start /d "C:\Users\!Username!\Desktop\MAS\All-In-One-Version-KL" MAS_AIO.cmd /HWID /Ohook
+        powershell -Command "& ([ScriptBlock]::Create((irm https://get.activated.win))) /HWID /Ohook /S"
     )
-    timeout /t 30 /nobreak
+    
 )
 
 ::====================================================================================
@@ -311,7 +317,7 @@ taskkill /f /im explorer.exe
 timeout /t 2 /nobreak
 start explorer.exe
 pause
-rd /s /q C:\Users\!Username!\Desktop\MAS
+@REM rd /s /q C:\Users\!Username!\Desktop\MAS
 goto :eof
 
 ::====================================================================================
