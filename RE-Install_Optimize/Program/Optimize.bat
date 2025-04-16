@@ -166,6 +166,7 @@ NetSh advfirewall set allprofiles state off
 powercfg /x monitor-timeout-ac 15
 powercfg /x -standby-timeout-ac 0
 powercfg /x -disk-timeout-ac 0
+call %~dp0\SystemVisualEffects.exe
 IF /I !Install_Mode! NEQ Zack_Install (
     regedit /s %~dp0\PotPlayerMini64.reg
 )

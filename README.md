@@ -42,7 +42,9 @@ Below are the specific optimizations performed by `Windows_RE-Install_Optimize` 
   - **主題與配色**：啟用色彩優先（`ColorPrevalence 1`），若非 `Zack_Normal_Install` 模式，複製並啟用自訂主題（`Anime.theme`），提升視覺個人化。  
     - **Themes and colors**: Enables color prevalence (`ColorPrevalence 1`), copies and applies custom theme (`Anime.theme`) unless in `Zack_Normal_Install` mode, enhancing visual personalization.  
   - **照片檢視器背景**：設定為深色（`BackgroundColor 4278190080`），改善圖片瀏覽體驗。  
-    - **Photo viewer background**: Sets to dark (`BackgroundColor 4278190080`), improving image viewing experience.  
+    - **Photo viewer background**: Sets to dark (`BackgroundColor 4278190080`), improving image viewing experience.
+    **最佳視覺效果**：自動開啟「效能選項」並選擇「調整為最佳外觀」，啟用所有視覺效果（如視窗動畫、陰影、平滑字體），增強桌面美觀度（可能略增加資源使用）。
+    - **Best visual effects**:open "Performance Options" and select "Adjust for best appearance," enabling all visual effects (e.g., window animations, shadows, smooth fonts), enhancing desktop aesthetics (may slightly increase resource usage).  
 
 - **其他調整 / Miscellaneous Tweaks**  
   - **停用 Office 保護檢視**：對 Excel、Word、PowerPoint 停用附件、網路檔案、不安全位置的限制（`DisableAttachmentsInPV` 等設為 1），加快文件開啟速度（但增加安全性風險）。  
