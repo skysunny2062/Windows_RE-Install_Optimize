@@ -43,7 +43,7 @@ Below are the specific optimizations performed by `Windows_RE-Install_Optimize` 
     - **Themes and colors**: Enables color prevalence (`ColorPrevalence 1`), copies and applies custom theme (`Anime.theme`) unless in `Zack_Normal_Install` mode, enhancing visual personalization.  
   - **照片檢視器背景**：設定為深色（`BackgroundColor 4278190080`），改善圖片瀏覽體驗。  
     - **Photo viewer background**: Sets to dark (`BackgroundColor 4278190080`), improving image viewing experience.
-    **最佳視覺效果**：自動開啟「效能選項」並選擇「調整為最佳外觀」，啟用所有視覺效果（如視窗動畫、陰影、平滑字體），增強桌面美觀度（可能略增加資源使用）。
+  - **最佳視覺效果**：自動開啟「效能選項」並選擇「調整為最佳外觀」，啟用所有視覺效果（如視窗動畫、陰影、平滑字體），增強桌面美觀度（可能略增加資源使用）。
     - **Best visual effects**:open "Performance Options" and select "Adjust for best appearance," enabling all visual effects (e.g., window animations, shadows, smooth fonts), enhancing desktop aesthetics (may slightly increase resource usage).  
 
 - **其他調整 / Miscellaneous Tweaks**  
