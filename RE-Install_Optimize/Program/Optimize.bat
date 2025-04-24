@@ -98,7 +98,17 @@ For %%P In (%~dp0..\Setup\*.exe) do (
 
 regedit /s %~dp0\winrar-Settings.reg
 IF /I !CrackActivation!==CrackActivation (    
-    xcopy /s /y %~dp0\rarreg.key "!ProgramFiles!\WinRAR"
+    echo RAR registration data>"!ProgramFiles!\WinRAR\rarreg.key"
+    echo SeVeN>>"!ProgramFiles!\WinRAR\rarreg.key"
+    echo Unlimited Company License>>"!ProgramFiles!\WinRAR\rarreg.key"
+    echo UID=000de082d4cb7aeb3e71>>"!ProgramFiles!\WinRAR\rarreg.key"
+    echo 64122122503e71057c0ffe5fed5dcbb0032f2d3c5fd42bb05edfe0>>"!ProgramFiles!\WinRAR\rarreg.key"
+    echo 6501b129e6e067e3819160fce6cb5ffde62890079861be57638717>>"!ProgramFiles!\WinRAR\rarreg.key"
+    echo 7131ced835ed65cc743d9777f2ea71a8e32c7e593cf66794343565>>"!ProgramFiles!\WinRAR\rarreg.key"
+    echo b41bcf56929486b8bcdac33d50ecf77399603fc518f2701b607304>>"!ProgramFiles!\WinRAR\rarreg.key"
+    echo 9b712761e333304a99485f38f292bc89b78036ec4c0faa35b6c3d6>>"!ProgramFiles!\WinRAR\rarreg.key"
+    echo df05d84217aef4abd0b675d3309b94f4be9c9cae1734784060e0c7>>"!ProgramFiles!\WinRAR\rarreg.key"
+    echo ef6e1deace43f1671ef3ef6d863944c13f3fc13a20f21488793187>>"!ProgramFiles!\WinRAR\rarreg.key"
     IF not exist "!ProgramFiles!\Microsoft Office" (
         echo.
         echo 檢測到未安裝Office請先安裝
