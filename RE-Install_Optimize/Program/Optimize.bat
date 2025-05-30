@@ -12,9 +12,8 @@ set Install_Mode=%2
 set CrackActivation=%3
 set DATARestore=%4
 set AnyDeskRestore=%5
-set Addtrans=%6
-set PCName=%7
-set WindowsLicense=%8
+set PCName=%6
+set WindowsLicense=%7
 ::====================================================================================
 IF /I !Options!==RE-Install_Optimize (
     IF /I !Install_Mode!==Normal_Install (
@@ -72,6 +71,7 @@ sc config TrkWks start= disabled
 sc config WdiServiceHost start= disabled
 sc config WdiSystemHost start= disabled
 sc config DPS start= disabled
+sc config CscService start= disabled
 !windir!\System32\OneDriveSetup.exe /uninstall
 echo.
 echo.
@@ -170,6 +170,8 @@ REG add "HKCU\Software\Microsoft\Windows Photo Viewer\Viewer" /v BackgroundColor
 REG add HKCU\Software\Classes\CLSID\{86ca1aa0-34aa-4e8b-a509-50c905bae2a2}\InprocServer32 /ve /f
 REG add "HKLM\SOFTWARE\Microsoft\Windows\CurrentVersion\Explorer\Shell Icons" /v 29 /d !windir!\system32\imageres.dll,197 /t reg_sz /f 
 REG add "HKLM\SOFTWARE\Microsoft\Windows\CurrentVersion\Explorer\Shell Icons" /v 77 /d !windir!\system32\imageres.dll,197 /t reg_sz /f 
+REG ADD "HKCU\Software\Microsoft\Windows\CurrentVersion\Internet Settings\ZoneMap\Ranges\Range1" /v "*" /t REG_DWORD /d 1 /f
+REG ADD "HKCU\Software\Microsoft\Windows\CurrentVersion\Internet Settings\ZoneMap\Ranges\Range1" /v ":Range" /t REG_SZ /d "192.168.*.*" /f
 attrib -s -r -h !LocalAppData!\iconcache.db
 del /f /q !LocalAppData!\iconcache.db  
 NetSh advfirewall set allprofiles state off
@@ -179,12 +181,6 @@ powercfg /x -disk-timeout-ac 0
 call %~dp0\SystemVisualEffects.exe
 IF /I !Install_Mode! NEQ Zack_Install (
     regedit /s %~dp0\PotPlayerMini64.reg
-)
-IF /I !Addtrans!==Addtrans (
-    ::net user trans /del
-    net user trans admtrans /add /passwordchg:no
-    WMIC USERACCOUNT WHERE "Name='trans'" SET PasswordExpires=False
-    net localgroup administrators trans /add
 )
 IF /I !Install_Mode! NEQ Zack_Normal_Install (
     xcopy /s /y %~dp0\Themes !windir!\Resources\Themes

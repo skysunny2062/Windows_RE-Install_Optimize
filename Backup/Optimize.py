@@ -1,4 +1,4 @@
-ProgramName="Optimize By Zack Ver240316"
+ProgramName="Optimize By Zack Ver250530"
 import sys
 import socket
 import datetime
@@ -49,7 +49,6 @@ def Instell():
     InstellList=[
         "Zack_Install_Mode",
         "CrackActivation",
-        "Addtrans",
         "DATARestore",
         "AnyDeskRestore"
     ]
@@ -84,7 +83,7 @@ def Instell():
     Are_you_sure()
     YYMMDD = datetime.datetime.now().strftime("%y%m%d")
     subprocess.run('REG add HKLM\\SOFTWARE\\Microsoft\\Windows\\CurrentVersion\\OEMInformation /v Model /t REG_SZ /f /d "Zack Optimize Ver' + YYMMDD)
-    subprocess.run(['Program\Optimize.bat',OptionsList["Options"],OptionsList["Zack_Install_Mode"],OptionsList["CrackActivation"],OptionsList["DATARestore"],OptionsList["AnyDeskRestore"],OptionsList["Addtrans"],OptionsList["PCName"],WindowsLicense])
+    subprocess.run(['Program\Optimize.bat',OptionsList["Options"],OptionsList["Zack_Install_Mode"],OptionsList["CrackActivation"],OptionsList["DATARestore"],OptionsList["AnyDeskRestore"],OptionsList["PCName"],WindowsLicense])
 #====================================================================================
 if __name__ == "__main__":
     menu()

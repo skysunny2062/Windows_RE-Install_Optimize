@@ -72,8 +72,6 @@ Below are the specific optimizations performed by `Windows_RE-Install_Optimize` 
          - `Zack_Install_Mode`: Normally select N, Y for my personal use mode, N for standard install mode (for general users).  
        - `CrackActivation`：一般選 N，Y 表示啟用破解激活（如 Windows、Office），N 表示不破解（合法使用）。  
          - `CrackActivation`: Normally select N, Y for enabling activation (e.g., Windows, Office), N for no activation (legal use).  
-       - `Addtrans`：一般選 N，Y 表示新增 trans 使用者帳戶（含管理員權限），N 表示不新增。  
-         - `Addtrans`: Normally select N, Y to add a "trans" user account (with admin privileges), N to skip.  
        - `DATARestore`：一般選 N，Y 表示還原使用者資料（從 D:\Backup），N 表示不還原。  
          - `DATARestore`: Normally select N, Y to restore user data (from D:\Backup), N to skip.  
        - `AnyDeskRestore`：一般選 N，Y 表示還原 AnyDesk 設定（從 D:\Backup），N 表示不還原。  
