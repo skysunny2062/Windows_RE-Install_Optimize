@@ -263,11 +263,11 @@ goto :eof
 ::================================mpv.net-DW_Backup====================================
 :mpvBackup
 
+del /f /q /s "!ProgramFiles!\mpv.net-DW\portable_config\settings.xml"
 rd /s /q "!ProgramFiles!\mpv.net-DW\portable_config\cache"
 rd /s /q "!ProgramFiles!\mpv.net-DW\portable_config\watch_later"
 xcopy /y "!ProgramFiles!\mpv.net-DW\portable_config\mpv.conf" "!ProgramFiles!\mpv.net-DW\portable_config\Backup\"
 robocopy "!ProgramFiles!\mpv.net-DW" "%~dp0ProgramFiles\mpv.net-DW" /mir /mt:128 /r:10 /w:3
-del /f /q /s settings.xml
 goto :eof
 
 ::==================================ZackDATABackup=====================================
