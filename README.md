@@ -104,6 +104,6 @@ This is a personal project; suggestions or Pull Requests are welcome.
 
 ## 版權與免責聲明 / License and Disclaimer  
 - 作者 / Author：Zack  
-- 版本 / Version：Ver240316  
+- 版本 / Version：Ver250530 
 - 僅限學習與個人使用，作者不承擔使用損失責任。  
 - For educational and personal use only; the author is not liable for any damages.
