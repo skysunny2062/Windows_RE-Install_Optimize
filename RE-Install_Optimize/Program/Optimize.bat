@@ -172,6 +172,7 @@ REG add "HKLM\SOFTWARE\Microsoft\Windows\CurrentVersion\Explorer\Shell Icons" /v
 REG add "HKLM\SOFTWARE\Microsoft\Windows\CurrentVersion\Explorer\Shell Icons" /v 77 /d !windir!\system32\imageres.dll,197 /t reg_sz /f 
 REG ADD "HKCU\Software\Microsoft\Windows\CurrentVersion\Internet Settings\ZoneMap\Ranges\Range1" /v "*" /t REG_DWORD /d 1 /f
 REG ADD "HKCU\Software\Microsoft\Windows\CurrentVersion\Internet Settings\ZoneMap\Ranges\Range1" /v ":Range" /t REG_SZ /d "192.168.*.*" /f
+REG ADD "HKCU\Software\Microsoft\Command Processor" /v DisableUNCCheck /t REG_DWORD /d 1 /f
 attrib -s -r -h !LocalAppData!\iconcache.db
 del /f /q !LocalAppData!\iconcache.db  
 NetSh advfirewall set allprofiles state off
