@@ -1,0 +1,30 @@
+2024-12-04 17:03:21isAutoStart=False
+2024-12-04 17:04:06isAutoStart=False
+2024-12-04 17:05:05isAutoStart=False
+2024-12-04 17:15:45isAutoStart=False
+2024-12-04 17:34:39isAutoStart=False
+2025-03-08 18:17:51MonitorList.coint=0
+2025-03-08 18:17:51item.SN =5f34556b8cca8700__item.PortName=__MonitorList.COUNT0
+2025-03-08 18:17:53item.SN =6d18e26ff2900501__item.PortName=__MonitorList.COUNT1
+2025-03-08 18:17:58 finally stop Start
+2025-03-11 13:10:45MonitorList.coint=0
+2025-03-11 13:14:50MonitorList.coint=0
+2025-03-11 13:16:03MonitorList.coint=0
+2025-03-11 13:16:03item.SN =583832558cc68700__item.PortName=__MonitorList.COUNT0
+2025-03-11 13:16:09 finally stop Start
+2025-03-11 13:16:20 finally stop Start
+2025-03-11 13:16:24 finally stop Start
+2025-03-17 17:06:20 finally stop Start
+2025-03-17 17:06:24 finally stop Start
+2025-03-17 17:06:35 finally stop Start
+2025-03-17 17:06:48 finally stop Start
+2025-03-17 17:06:55 finally stop Start
+2025-03-17 17:07:03 finally stop Start
+2025-03-17 17:07:18 finally stop Start
+2025-03-17 17:07:24 finally stop Start
+2025-05-20 10:34:38GetAllWinUsbDevice,item=>\\?\usb#vid_1cbe&pid_0088#392d429aaccd4703#{88bae032-5a81-49f0-bc3d-a4ff138216d6}
+2025-05-20 10:34:38GetAllWinUsbDevice,item=>\\?\usb#vid_1cbe&pid_f000#0123456789#{12345678-1234-1344-1234-123456789abc}
+2025-05-20 10:34:38GetAllDevice.count = 2
+2025-05-20 10:34:38curmonitor.code = VID_1D6B&PID_0121
+2025-05-20 10:34:38curmonitor.code = VID_1CBE&PID_0088
+2025-05-20 10:37:14 finally stop Start
